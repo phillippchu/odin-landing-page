@@ -1,0 +1,96 @@
+/* Box sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+section {
+  padding: 1rem 20rem;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: #3882F6;
+  color: #F9FAF8;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #1F2937;
+}
+
+.hero .hero-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero .hero-header .header-logo {
+  font-size: 2.4rem;
+  color: #F9FAF8;
+}
+
+.hero .hero-header .header-link {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.hero .hero-header .header-link a {
+  text-decoration: none;
+  margin-left: 3rem;
+  font-size: 1.8rem;
+  color: #E5E7EB;
+}
+
+.hero .hero-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 15rem 0;
+}
+
+.hero .hero-content .hero-text .hero-main {
+  font-size: 4.8rem;
+  font-weight: 900;
+  color: #F9FAF8;
+}
+
+.hero .hero-content .hero-text .hero-secondary {
+  font-size: 1.8rem;
+  color: #E5E7EB;
+}
