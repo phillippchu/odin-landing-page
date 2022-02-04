@@ -33,10 +33,6 @@ body {
   line-height: 1.5;
 }
 
-section {
-  padding: 1rem 20rem;
-}
-
 ul {
   list-style: none;
 }
@@ -49,11 +45,19 @@ button {
   padding: 1rem 3rem;
   border-radius: 1rem;
   border: none;
+  margin-top: 1.5rem;
+  cursor: pointer;
 }
 
 /* Hero Section */
 .hero {
   background-color: #1F2937;
+}
+
+.hero .hero-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 1rem 0 3rem 0;
 }
 
 .hero .hero-header {
@@ -64,9 +68,12 @@ button {
 .hero .hero-header .header-logo {
   font-size: 2.4rem;
   color: #F9FAF8;
+  /* border: 1px solid #F9FAF8; */
+  align-self: center;
 }
 
 .hero .hero-header .header-link {
+  /* border: 1px solid #F9FAF8; */
   display: flex;
   justify-self: flex-end;
 }
@@ -93,4 +100,111 @@ button {
 .hero .hero-content .hero-text .hero-secondary {
   font-size: 1.8rem;
   color: #E5E7EB;
+}
+
+.hero .hero-content img {
+  justify-self: end;
+}
+
+/* Information Section */
+.information {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 10rem auto;
+  text-align: center;
+  /* border: 2px solid #3882F6; */
+}
+
+.information h2 {
+  margin: 3rem 0;
+  font-size: 3.2rem;
+  /* border: 1px solid #3882F6; */
+}
+
+.information .information-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* border: 1px solid #1F2937; */
+}
+
+.information .information-grid .information-card {
+  /* border: 1px solid #1F2937; */
+  text-align: center;
+  width: 175px;
+  justify-self: center;
+}
+
+.information .information-grid .information-card .image-placeholder {
+  height: 175px;
+  width: 175px;
+  border: 3px solid #3882F6;
+  border-radius: 2rem;
+  margin: 0 auto 1rem auto;
+}
+
+/* Quote Section */
+.quote {
+  background-color: #E5E7EB;
+}
+
+.quote .quote-container {
+  padding: 10rem 0 10rem 0;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.quote .quote-container .quote-text {
+  font-size: 3.6rem;
+  color: #1F2937;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.quote .quote-container .quote-author {
+  font-weight: 700;
+  text-align: right;
+  margin-top: 1rem;
+  margin-right: 10rem;
+}
+
+/* Subscription Section */
+.subscription .subscription-container {
+  display: flex;
+  background-color: #3882F6;
+  max-width: 1280px;
+  margin: 10rem auto;
+  padding: 5rem 15rem;
+  border-radius: 1rem;
+}
+
+.subscription .subscription-container .subscription-content .subscription-text-1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #F9FAF8;
+}
+
+.subscription .subscription-container .subscription-content .subscription-text-2 {
+  color: #E5E7EB;
+}
+
+.subscription .subscription-container .subscription-text-1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #F9FAF8;
+}
+
+.subscription .subscription-container button {
+  border: 2px solid #F9FAF8;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #1F2937;
+  color: #F9FAF8;
+  text-align: center;
+  padding: 3rem 0;
 }
